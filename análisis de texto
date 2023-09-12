@@ -1,0 +1,32 @@
+#Primera parte def de variables
+texto = input("Introduce un texto y/o frase, descubriremos ciertas cosas de el saludos. \n")
+texto = texto.lower()
+texto1_1 = texto.split()
+letra1 = input("Introduce una letra: " ).lower()
+letra2 = input("Introduce una letra: " ).lower()
+letra3 = input("Introduce una letra: " ).lower()
+letras = letra1,letra2,letra3
+py = "Python".lower()
+print("Tus 3 letras son: ",letras)
+
+#Cuantas veces aparecen las letras en el texto
+print("cuantas veces aparecen las letras en el texto?")
+print(letra1, texto.count(letra1))
+print(letra2, texto.count(letra2))
+print(letra3, texto.count(letra3))
+
+
+#Cuantas palabras hay en total
+print("El texto tiene esta cantidad de palabras: ")
+print(len(texto1_1))
+#Primer y ultima letra
+print("La primera letra es: ")
+print(texto[0])
+print("La ultima letra es: ")
+print(texto[-2])
+#palabras en orden inveerso
+print("Texto en orden inverso")
+print(texto[::-1])
+#aparece "python"
+print("Aparece Python en el texto?")
+print(py in texto)
